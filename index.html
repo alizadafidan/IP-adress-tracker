@@ -4,8 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
     <title>IP Address Tracker</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h1 class="header-title">IP Adress Tracker</h1>
+      <form class="header-form">
+        <input
+          type="text"
+          name="ip"
+          id="ip"
+          class="header-input"
+          minlength="7"
+          maxlength="15"
+          size="15"
+          placeholder="Search for any IP adress or domain"
+          aria-label="Search IP"
+        />
+        <button class="header-button">
+          <img src="images/icon-arrow.svg" alt="Arrow Icon" />
+        </button>
+      </form>
+
+      <div class="header-box">
+        <div class="header-ip-info">
+          <p class="header-ip-title">IP Adress</p>
+          <span class="header-ip-result header-ip-adress"></span>
+        </div>
+        <div class="header-ip-info">
+          <p class="header-ip-title">Location</p>
+          <span class="header-ip-result header-ip-adress"></span>
+        </div>
+        <div class="header-ip-info">
+          <p class="header-ip-title">Timezone</p>
+          <span class="header-ip-result header-ip-adress"></span>
+        </div>
+        <div class="header-ip-info">
+          <p class="header-ip-title">ISP</p>
+          <span class="header-ip-result header-ip-adress"></span>
+        </div>
+      </div>
+    </header>
+    <main class="content">
+      <div id="map-id"></div>
+    </main>
+  </body>
 </html>
