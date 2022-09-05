@@ -4,7 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+
     <script defer src="script.js"></script>
     <title>IP Address Tracker</title>
   </head>
@@ -35,15 +54,15 @@
         </div>
         <div class="header-ip-info">
           <p class="header-ip-title">Location</p>
-          <span class="header-ip-result header-ip-adress"></span>
+          <span class="header-ip-result header-ip-location"></span>
         </div>
         <div class="header-ip-info">
           <p class="header-ip-title">Timezone</p>
-          <span class="header-ip-result header-ip-adress"></span>
+          <span class="header-ip-result header-ip-timezone"></span>
         </div>
         <div class="header-ip-info">
           <p class="header-ip-title">ISP</p>
-          <span class="header-ip-result header-ip-adress"></span>
+          <span class="header-ip-result header-ip-isp"></span>
         </div>
       </div>
     </header>
