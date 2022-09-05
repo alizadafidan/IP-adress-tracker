@@ -43,9 +43,10 @@ body {
 
 .header-title {
   font-size: x-large;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-bold);
   color: var(--white);
   margin-bottom: 1rem;
+  font: inherit;
 }
 
 .header-form {
@@ -53,6 +54,7 @@ body {
   max-width: 55rem;
   margin: 1.5rem 0;
   position: relative;
+  font: inherit;
 }
 
 .header-input {
@@ -64,6 +66,7 @@ body {
   outline: none;
   font-size: 1.5rem;
   cursor: pointer;
+  font: inherit;
 }
 
 .header-button {
@@ -103,14 +106,14 @@ body {
 .header-ip-title {
   color: var(--gray);
   font-weight: var(--font-weight-bold);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
 }
 
 .header-ip-result {
   display: block;
   margin-top: 1rem;
-  font-size: large;
+  font-size: 1.8rem;
   font-weight: var(--font-weight-medium);
 }
 
@@ -121,4 +124,9 @@ body {
 .leaflet-top,
 .leaflet-left {
   display: none;
+}
+
+.header-ip-result,
+.header-ip-adress {
+  font-weight: var(--font-weight-bold);
 }
