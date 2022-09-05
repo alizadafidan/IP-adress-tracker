@@ -84,8 +84,7 @@ body {
   height: 28rem;
   max-width: 1100px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   background-color: var(--white);
   padding: 2rem;
@@ -113,4 +112,13 @@ body {
   margin-top: 1rem;
   font-size: large;
   font-weight: var(--font-weight-medium);
+}
+
+#map-id {
+  height: calc(100vh - 280px);
+}
+
+.leaflet-top,
+.leaflet-left {
+  display: none;
 }
